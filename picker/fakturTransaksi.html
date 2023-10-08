@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Faktur Transaksi</title>
+  </head>
+  <body>
+    <nav class="bg-[#8DC63F]">
+      <div
+        class="h-[169px] mx-auto max-w-[1200px] px-8 flex flex-col justify-center"
+      >
+        <div class="mb-6 flex justify-between">
+          <ul class="flex items-center gap-5 text-white">
+            <li>call center</li>
+            <li>kontak kami</li>
+          </ul>
+          <ul class="flex items-center gap-5 text-white">
+            <li>Notifikasi</li>
+            <li>Bantuan</li>
+            <li>Bahasa Indonesia</li>
+          </ul>
+        </div>
+        <div class="flex items-center justify-between">
+          <img
+            class="w-[220px]"
+            src="../assets/image/main-logo.png"
+            alt="Paytrash icons"
+          />
+          <div
+            class="w-[700px] bg-white p-2 flex items-center gap-6 rounded-md"
+          >
+            <img class="w-6" src="../assets/image/search.svg" alt="" />
+            <input
+              class="bg-transparent text-slate-900 outline-none"
+              type="text"
+              placeholder="Cari..."
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="max-w-[1200px] mx-auto px-8 py-20 flex">
+      <aside class="basis-2/5">
+        <div class="flex items-center gap-9 mb-20">
+          <img
+            class="w-24 h-24 object-cover border-2 border-slate-400 rounded-full"
+            src="../assets/image/mark.webp"
+            alt=""
+          />
+          <div>
+            <p class="text-xl font-semibold">Mark Zuckerberg</p>
+            <p>Ubah profile</p>
+          </div>
+        </div>
+        <div>
+          <ul class="flex flex-col gap-7 pl-32">
+            <li class="text-xl font-semibold">
+              <a href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="text-xl font-semibold">
+              <a href="tambahWarga.html">Tambah Warga</a>
+            </li>
+            <li class="text-xl font-semibold text-[#8DC63F]">
+              <a href="fakturTransaksi.html">Faktur Transaksi</a>
+            </li>
+            <li class="text-xl font-semibold">
+              <a href="riwayatTransaksi.html">Riwayat Transaksi</a>
+            </li>
+            <li class="text-xl font-semibold">
+              <a href="koinku.html">Koinku</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <main class="basis-3/5 mt-6">
+        <div class="bg-[#8DC63F] rounded-md py-3">
+          <h1 class="text-center text-white text-2xl font-bold">
+            Faktur Transaksi
+          </h1>
+        </div>
+        <section class="bg-[#8DC63F] p-10 mt-6 rounded-md text-[13px]">
+          <div class="flex gap-4 mb-7">
+            <input
+              class="max-w-[239px] px-3 py-[6px] outline-none"
+              type="text"
+              placeholder="Nama..."
+            />
+            <button class="bg-white px-5 py-[6px]">Cari</button>
+          </div>
+          <div class="bg-white px-6 py-3 rounded-md">
+            <div class="flex gap-1 mb-7">
+              <p>Menampilkan</p>
+              <select name="" id="" class="bg-[#D9D9D9]">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+              </select>
+              <p>kolom</p>
+            </div>
+            <table class="border-none w-full">
+              <thead>
+                <tr class="border-b-2 border-black font-bold">
+                  <td class="p-[18px]">No</td>
+                  <td class="p-[18px]">Nama</td>
+                  <td class="p-[18px]">Alamat</td>
+                  <td class="p-[18px]">Struk</td>
+                  <td class="p-[18px]">Verifikasi</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-[18px]">1.</td>
+                  <td class="p-[18px]">Mark Zuck</td>
+                  <td class="p-[18px]">JL Meta no 03</td>
+                  <td class="p-[18px]">
+                    <button class="bg-[#D9D9D9] font-bold p-1">Unduh</button>
+                  </td>
+                  <td class="p-[18px]">
+                    <button class="bg-[#D9D9D9] font-bold p-1 px-2">
+                      Verifikasi
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-[18px]">2.</td>
+                  <td class="p-[18px]">Bill</td>
+                  <td class="p-[18px]">JL One Microsoft Way no 9</td>
+                  <td class="p-[18px]">
+                    <button class="bg-[#D9D9D9] font-bold p-1">Unduh</button>
+                  </td>
+                  <td class="p-[18px]">
+                    <button class="bg-[#D9D9D9] font-bold p-1 px-2">
+                      Verifikasi
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="bg-[#8DC63F] text-white">
+      <section
+        class="h-[484px] max-w-[1200px] mx-auto px-8 py-20 flex flex-col justify-between"
+      >
+        <div class="flex items-start justify-between">
+          <img src="../assets/image/footer-logo.png" alt="paytrash logo" />
+          <div>
+            <p class="mb-7 text-xl font-bold">Layanan Kami</p>
+            <ul>
+              <li>Bantuan</li>
+              <li>Notifikasi</li>
+              <li>Kontak kami</li>
+            </ul>
+          </div>
+          <div>
+            <p class="mb-7 text-xl font-bold alig">Ikuti Kami</p>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div>
+            <p class="mb-7 text-xl font-bold">Cari Materi</p>
+            <div class="flex p-4 gap-2 bg-white rounded-md">
+              <img class="w-6" src="../assets/image/search.svg" alt="" />
+              <input
+                class="bg-transparent text-slate-900 outline-none"
+                type="text"
+                placeholder="Cari..."
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center gap-10">
+          <p>Kebijakan privasi</p>
+          <p>Disclaimer</p>
+        </div>
+        <p class="text-center">© 2023 paytrash. All Rights Reserved</p>
+      </section>
+    </footer>
+  </body>
+</html>

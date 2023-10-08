@@ -1,0 +1,10 @@
+bg-main-color : #8DC63F
+
+padding untuk section: 32px
+max-width untuk section: 1200px
+
+
+setiap file.html harus ada pada head tag: 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/style.css" />
+untuk href bisa disesuaikan dengan letak file
