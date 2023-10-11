@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lupa Kata Sandi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <section class="flex flex-col justify-between items-center h-screen">
+      <div
+        class="bg-[#2CB249] text-white w-full h-[88px] flex justify-end items-center px-10"
+      >
+        <button>
+          <img class="w-10 h-10" src="./assets/image/close.svg" alt="" />
+        </button>
+      </div>
+      <div class="bg-[#2CB249] w-[894px] h-[534px] rounded-[15px] px-48">
+        <!-- Isi elemen di sini -->
+        <h1 class="text-center text-[40px] mt-12 text-[#ffff] font-bold">
+          Pemulihan akun
+        </h1>
+        <p class="text-center text-[20px] text-[#ffff]">
+          Masukkan email akun Anda yang sudah terdaftar kemudian ikuti
+          <br />langkah pada email yang Kami kirimkan.
+        </p>
+
+        <div class="mt-20 text-center">
+          <form action="email">
+            <label
+              class="ml-[25px] text-[#ffff]"
+              for="email"
+              style="display: block; text-align: left"
+              >Email</label
+            >
+            <input
+              class="w-[464px] outline-none rounded-md p-2"
+              type="email"
+              id="email"
+              required
+              placeholder="email"
+            />
+            <button
+              class="mt-14 text-[#ffff] bg-[#365FEF] w-[166px] h-[37px] rounded-[15px]"
+              type="submit"
+            >
+              Kirimkan
+            </button>
+          </form>
+        </div>
+
+        <a
+          class="mt-10 flex text-center justify-center text-[#ffff]"
+          href="./index.html"
+          >Kembai ke pytrash</a
+        >
+      </div>
+
+      <div
+        class="bg-[#2CB249] text-white w-full h-[88px] font-bold flex justify-center items-center"
+      >
+        <p>( x ) Untuk Menutup Layanan</p>
+      </div>
+    </section>
+  </body>
+</html>
