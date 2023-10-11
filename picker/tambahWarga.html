@@ -8,19 +8,19 @@
     <title>Tambah Warga</title>
   </head>
   <body>
-    <nav class="bg-[#8DC63F]">
+    <nav class="bg-[#2CB249]">
       <div
         class="h-[169px] mx-auto max-w-[1200px] px-8 flex flex-col justify-center"
       >
         <div class="mb-6 flex justify-between">
           <ul class="flex items-center gap-5 text-white">
-            <li>call center</li>
-            <li>kontak kami</li>
+            <li><a href="#">call center</a></li>
+            <li><a href="#">kontak kami</a></li>
           </ul>
           <ul class="flex items-center gap-5 text-white">
-            <li>Notifikasi</li>
-            <li>Bantuan</li>
-            <li>Bahasa Indonesia</li>
+            <li><a href="../notifikasi.html">Notifikasi</a></li>
+            <li><a href="#">Bantuan</a></li>
+            <li><a href="#">Bahasa Indonesia</a></li>
           </ul>
         </div>
         <div class="flex items-center justify-between">
@@ -42,6 +42,7 @@
         </div>
       </div>
     </nav>
+
     <div class="max-w-[1200px] mx-auto px-8 py-20 flex">
       <aside class="basis-2/5">
         <div class="flex items-center gap-9 mb-20">
@@ -60,7 +61,7 @@
             <li class="text-xl font-semibold">
               <a href="dashboard.html">Dashboard</a>
             </li>
-            <li class="text-xl font-semibold text-[#8DC63F]">
+            <li class="text-xl font-semibold text-[#2CB249]">
               <a href="tambahWarga.html">Tambah Warga</a>
             </li>
             <li class="text-xl font-semibold">
@@ -76,15 +77,55 @@
         </div>
       </aside>
       <main class="basis-3/5 mt-6">
-        <div class="bg-[#8DC63F] rounded-md py-3">
+        <div class="bg-[#2CB249] rounded-md py-3">
           <h1 class="text-center text-white text-2xl font-bold">
             Tambah Warga
           </h1>
         </div>
-        <section class="bg-[#8DC63F] p-10 mt-6 rounded-md"></section>
+        <section class="bg-[#2CB249] p-10 mt-6 rounded-md">
+          <div class="grid grid-cols-[30fr,70fr] text-white gap-y-3">
+            <label for="nama">Nama</label>
+            <input
+              id="nama"
+              type="text"
+              class="p-1 outline-none text-black rounded-md bg-white"
+            />
+            <label for="alamat">Alamat</label>
+            <textarea
+              id="alamat"
+              rows="4"
+              class="p-1 outline-none text-black rounded-md bg-white"
+            ></textarea>
+            <label for="noHandphone">No. Handphone</label>
+            <input
+              id="noHandphone"
+              type="email"
+              class="p-1 outline-none text-black rounded-md bg-white"
+            />
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              class="p-1 outline-none text-black rounded-md bg-white"
+            />
+            <div></div>
+            <div class="flex justify-center gap-4 mt-6">
+              <button
+                class="text-[13px] w-20 px-3 py-[2px] rounded-lg bg-[#365FEF] text-white"
+              >
+                Tambah
+              </button>
+              <button
+                class="text-[13px] w-20 px-3 py-[2px] rounded-lg bg-white text-black"
+              >
+                Batal
+              </button>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
-    <footer class="bg-[#8DC63F] text-white">
+    <footer class="bg-[#2CB249] text-white">
       <section
         class="h-[484px] max-w-[1200px] mx-auto px-8 py-20 flex flex-col justify-between"
       >
