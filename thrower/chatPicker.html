@@ -52,7 +52,7 @@
             alt=""
           />
           <div>
-            <p class="text-xl font-semibold">Mark Zuckerberg</p>
+            <p class="text-xl font-semibold">Muhammad Fajri Maulana</p>
             <p>Ubah profile</p>
           </div>
         </div>
@@ -62,7 +62,7 @@
               <a href="dashboard.html">Dashboard</a>
             </li>
             <li class="text-xl font-semibold">
-              <a href="bayarSampah.html">Bayar sampah</a>
+              <a href="buangSampah.html">Buang sampah</a>
             </li>
             <li class="text-xl font-semibold text-[#2CB249]">
               <a href="transaksi.html">Transaksi</a>
@@ -77,16 +77,28 @@
         </div>
       </aside>
       <main class="basis-3/5 mt-6">
-        <div class="bg-[#2CB249] text-black rounded-md py-3 px-10">
+        <div class="bg-[#2CB249] text-white rounded-md py-3 px-10">
           <h1 class="font-bold">
             <a href="../thrower/transaksi.html">Transaksi</a>
             / chat picker
           </h1>
         </div>
-        <section
-          class="bg-[#2CB249] p-10 mt-6 rounded-md grid grid-cols-3 gap-6"
-        >
-          <!-- code here -->
+        <section class="bg-[#2CB249] p-10 mt-6 rounded-md">
+          <div class="flex flex-col gap-4">
+            <div class="h-[330px] overflow-y-auto" id="chat-box">
+              <!-- list chat -->
+            </div>
+            <div class="flex gap-x-4">
+              <input
+                id="chat-input"
+                type="text"
+                class="flex-grow p-2 outline-none rounded-md"
+              />
+              <button id="send-chat-btn">
+                <img class="w-8 h-8" src="../assets/image/send.svg" alt="" />
+              </button>
+            </div>
+          </div>
         </section>
       </main>
     </div>
@@ -131,5 +143,6 @@
         <p class="text-center">© 2023 paytrash. All Rights Reserved</p>
       </section>
     </footer>
+    <script src="../script/thrower/chat.js" type="module"></script>
   </body>
 </html>
