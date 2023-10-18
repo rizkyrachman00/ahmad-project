@@ -1,79 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Thrower</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./styles/style.css" />
-</head>
-<body>
-    <section class="flex ml-[50px] ">
-        <div class=" mr-[2px] text-center mt-[100px]">
-            <h1 class="text-[32px]">LOGIN THROWER</h1>
-            <img class="w-[525px] h-[748px]  mb-32 pt-2" src="./assets/image/Rectangle 4252.png" alt=""> <!-- Mengatur lebar gambar menjadi 96 piksel -->
+  </head>
+  <body>
+    <section
+      class="flex gap-4 max-w-5xl mx-auto justify-center items-center min-h-screen"
+    >
+      <div class="flex flex-col justify-center items-center">
+        <h1 class="text-[32px]">LOGIN THROWER</h1>
+        <img
+          class="w-[525px] pt-2"
+          src="./assets/image/Rectangle 4252.png"
+          alt=""
+        />
+      </div>
+      <div class="basis-1/2 flex flex-col gap-4 items-center">
+        <img
+          class="mx-auto w-[258px] h-[77px]"
+          src="./assets/image/logo bank sampah hitam.png"
+          alt=""
+        />
+        <p class="text-center font-bold text-[36px]">Masuk dan Verifikasi</p>
+        <p class="text-center text-[20px]">
+          <span class="font-bold">Baru!</span> Nikmati kemudahan sistem
+          autentikasi tunggal untuk mengakses semua layanan dengan satu akun.
+        </p>
+
+        <ul class="flex items-center justify-center space-x-4">
+          <li>
+            <a href="#">
+              <img
+                class="w-[65px] h-[65px]"
+                src="./assets/image/Google_Icons-09-512 4.png"
+                alt=""
+              />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img
+                class="w-[46px] h-[41px]"
+                src="./assets/image/Facebook_icon 4.png"
+                alt=""
+              />
+            </a>
+          </li>
+        </ul>
+
+        <div class="flex items-center w-full gap-2">
+          <div class="border-[1px] border-slate-900 w-full flex-1"></div>
+          <span class="text-base">Atau lanjutkan dengan</span>
+          <div class="border-[1px] border-slate-900 w-full flex-1"></div>
         </div>
-        
-        
-        <div class="mt-[32px] mb-12 max-w-sm flex flex-col items-center ml-36">
-            <img class="mx-auto w-[258px] h-[77px]" src="./assets/image/logo bank sampah hitam.png" alt="">
-            <p class="text-center mt-4 font-bold text-[36px]">Masuk dan Verifikasi</p>
-            <p class="text-center  text-[20px]"><span class="font-bold">Baru!</span> Nikmati kemudahan sistem autentikasi tunggal untuk mengakses semua layanan dengan satu akun.</p>
-            
-            <ul class="flex items-center justify-center space-x-4 mt-4">
-                <li>
-                    <img herf="#" class="w-[73px] h-[65px]" src="./assets/image/Google_Icons-09-512 4.png" alt="">
-                </li>
-                <li>
-                    <img herf="https://www.warungbelajar.com/belajar-html-part-25-cara-membuat-input-hidden-di-form-html.html" class="w-[46px] h-[41px]" src="./assets/image/Facebook_icon 4.png" alt="">
-                </li>
-            </ul>
-        
 
-            <div class="flex items-center mt-4">
-                <div class="bg-black h-[2px] w-full flex-1"></div>
-                <span class="mx-4 text-base">Atau lanjutkan dengan</span>
-                <div class="bg-black h-[2px] w-full flex-1"></div>
-            </div>
-
-            
-
-            <div class="mt-4">
-                <label for="nama2" class="block text-gray-700 font-semibold">Nama</label>
-                <input type="text" id="nama2" name="nama2" class="bg-[#D9D9D9] border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-500 w-[560px] h-[53px]" required="">
-            </div>
-        
-            <div class="mt-4">
-                <label for="Email" class="block text-gray-700 font-semibold">Email</label>
-                <input type="text" id="Email" name="Email" class="bg-[#8DC63F]  border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-500 w-[560px] h-[53px]" required="">
-            </div>
-        
-            <div class="mt-4">
-                <label for="Kata Sandi" class="block text-gray-700 font-semibold">Kata Sandi</label>
-                <input type="text" id="Kata Sandi" name="Kata Sandi" class="bg-[#D9D9D9]  border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-500 w-[560px] h-[53px]" required="">
-                
-                    <div class="mt-2 text-right">
-                         <a class="text-blue-600" href="#">Lupa Kata Sandi</a> <!-- Mengatur teks "Lupa Kata Sandi" di sebelah kanan -->
-                    </div>
-            </div>
-            
-        
-            <div class=" mr-[450px]">
-                <label for="myCheckbox" class="inline-flex space-x-2">
-                    <input type="checkbox" id="myCheckbox" class="form-checkbox h-[35px] w-[32px] text-black">
-                    <span style="float: left;" class="text-black font-bold text-[20px]">Klik centang</span>
-                </label>
-            </div>
-        
-            <div class="mt-8 ">
-                <button class="w-full text-base font-semibold text-white bg-blue-600 px-10 py-2 rounded-full hover:shadow-lg hover:bg-teal-400">Login</button>
-            </div>
-        
-            <p class="text-center mt-4">Belum Punya Akun? <a class="text-bl" href="#">Klik Sign Up</a></p>
+        <div>
+          <label for="nama2" class="block text-gray-700 font-semibold"
+            >Nama</label
+          >
+          <input
+            type="text"
+            id="nama2"
+            name="nama2"
+            class="border border-black rounded px-3 py-2 focus:outline-none w-[560px] h-[53px]"
+            required
+          />
         </div>
-        
+
+        <div>
+          <label for="Email" class="block text-gray-700 font-semibold"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="Email"
+            name="Email"
+            class="border border-black rounded px-3 py-2 focus:outline-none w-[560px] h-[53px]"
+            required
+          />
+        </div>
+
+        <div class="flex flex-col">
+          <label for="Kata Sandi" class="block text-gray-700 font-semibold"
+            >Kata Sandi</label
+          >
+          <input
+            type="password"
+            id="Kata Sandi"
+            name="Kata Sandi"
+            class="border border-black rounded px-3 py-2 focus:outline-none w-[560px] h-[53px]"
+            required
+          />
+
+          <div class="mt-2 text-right">
+            <a class="text-blue-600" href="./LupakataSandi.html"
+              >Lupa Kata Sandi</a
+            >
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-center self-start">
+          <input
+            type="checkbox"
+            id="myCheckbox"
+            class="h-[35px] w-[32px] text-black"
+            required
+          />
+          <label for="myCheckbox">Klik centang</label>
+        </div>
+
+        <div>
+          <button
+            class="w-full text-base font-semibold text-white bg-blue-600 px-10 py-2 rounded-full hover:shadow-lg hover:bg-teal-400"
+          >
+            Login
+          </button>
+        </div>
+
+        <p class="text-center">
+          Belum Punya Akun? Klik
+          <a class="text-[#2650E4]" href="./Daftar.html">Sign Up</a>
+        </p>
+      </div>
     </section>
-
-
-</body>
+  </body>
 </html>
