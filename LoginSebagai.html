@@ -1,47 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Sebagai</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../styles/style.css" />
-</head>
-<body>
-    <section class="flex mt-[30px] mb-[40pxpx] pl-[80px] pr-[15px]">
-        <div class="text-center mr-[150px] mt-[50px]">
-            <img class="w-[340px] mx-auto" src="./assets/image/logohitam.png" alt="">
-            <h1 class="font-bold text-[35px] pt-[20px]">Silahkan 
-                <br>Pilih Jenis Pengguna</h1>
-            <p class="font-bold text-[14px] pt-6">Bergabunglah dengan Bank Sampah dan Berkontribusi 
-                <br>untuk Bumi yang Lebih Hijau</p>
-        </div>
-         
-        <section class="right-[200px]">
-
-        <div class="mb-[100px] left-10 ">
-            <button class="mb-16 flex rounded-[15px] bg-gradient-to-b from-[#2CB249] to-[#8DC649] w-[550.03px] h-[240px]">
-              <img class="absolute bottom-[320px] w-[265.2px] h-[199.1.px] " src="./assets/image/fotothrower.png" alt="">
-                <ul>
-                    <h1 class="text-left pt-[20px] pl-[285px] text-[22px] font-bold text-white">Mari Ambil 
-                        <br>Sampah</h1>
-                        <h2 class="pt-10 pl-[285px] text-[32px] font-bold text-white">Picker</h2>
-                </ul>
-            </button>
-
-            <button class="flex rounded-[15px] bg-gradient-to-b from-[#2CB249] to-[#8DC649] w-[550.03px] h-[240px]">
-              <img class="absolute top-[285px] w-[250.2px] h-[199.1.px] " src="./assets/image/fotopicker1.png" alt="">
-
-                <ul>
-                    <h1 class="text-left pt-[20px] pl-[285px] text-[22px] font-bold text-white">Mari Buang 
-                        <br>Sampah</h1>
-                        <h2 class="pt-10 pl-[285px] text-[32px] font-bold text-white">Thrower</h2>
-                </ul>
-            </button>
-
-      
-        </div>
-        </section>
+  </head>
+  <body>
+    <section class="min-h-screen flex justify-center items-center gap-14">
+      <div class="flex flex-col justify-center items-center gap-10">
+        <img
+          class="w-[340px] mx-auto"
+          src="./assets/image/logohitam.png"
+          alt=""
+        />
+        <h1 class="font-bold text-[35px] text-center mt-3">
+          Silahkan <br />Pilih Jenis Pengguna
+        </h1>
+        <p class="font-bold text-[14px] text-center">
+          Bergabunglah dengan Bank Sampah dan Berkontribusi <br />
+          untuk Bumi yang Lebih Hijau
+        </p>
+      </div>
+      <div>
+        <a href="./picker/login.html">
+          <div
+            class="flex items-center gap-14 pr-14 rounded-2xl bg-gradient-to-b from-[#2CB249] to-[#8DC649]"
+          >
+            <img
+              class="w-[320px]"
+              src="./assets/image/fotothrower.png"
+              alt=""
+            />
+            <div>
+              <h1 class="text-left text-[22px] font-bold text-white">
+                Mari Ambil <br />Sampah
+              </h1>
+              <h2 class="text-[32px] font-bold text-white mt-10">Picker</h2>
+            </div>
+          </div>
+        </a>
+        <a href="./thrower/login.html">
+          <div
+            class="flex items-center gap-14 pr-14 mt-12 rounded-2xl bg-gradient-to-b from-[#2CB249] to-[#8DC649]"
+          >
+            <img
+              class="w-[320px]"
+              src="./assets/image/fotopicker1.png"
+              alt=""
+            />
+            <div>
+              <h1 class="text-left text-[22px] font-bold text-white">
+                Mari Buang <br />Sampah
+              </h1>
+              <h2 class="text-[32px] font-bold text-white mt-10">Thrower</h2>
+            </div>
+          </div>
+        </a>
+      </div>
     </section>
-</body>
+  </body>
 </html>
