@@ -29,15 +29,20 @@
             src="../assets/image/main-logo.png"
             alt="Paytrash icons"
           />
-          <div
-            class="w-[700px] bg-white p-2 flex items-center gap-6 rounded-md"
-          >
-            <img class="w-6" src="../assets/image/search.svg" alt="" />
-            <input
-              class="bg-transparent text-slate-900 outline-none"
-              type="text"
-              placeholder="Cari..."
-            />
+          <div class="flex gap-4">
+            <div
+              class="w-[700px] bg-white p-2 flex items-center gap-6 rounded-md"
+            >
+              <img class="w-6" src="../assets/image/search.svg" alt="" />
+              <input
+                class="bg-transparent text-slate-900 outline-none"
+                type="text"
+                placeholder="Cari..."
+              />
+            </div>
+            <button class="p-2 rounded-md bg-white text-black">
+              <a href="./chatPicker.html">PESAN</a>
+            </button>
           </div>
         </div>
       </div>
@@ -48,7 +53,7 @@
         <div class="flex items-center gap-9 mb-20">
           <img
             class="w-24 h-24 object-cover border-2 border-slate-400 rounded-full"
-            src="../assets/image/mark.webp"
+            src="../assets/image/chan.webp"
             alt=""
           />
           <div>
@@ -70,7 +75,7 @@
             <li class="text-xl font-semibold">
               <a href="riwayatTransaksi.html">Riwayat Transaksi</a>
             </li>
-            <li class="text-xl font-semibold text-[#2CB249]">
+            <li class="text-xl font-semibold">
               <a href="koinku.html">Koinku</a>
             </li>
           </ul>
@@ -78,14 +83,22 @@
       </aside>
       <main class="basis-3/5 mt-6">
         <div class="bg-[#2CB249] text-black rounded-md py-3 px-10">
-          <h1 class="font-bold">
-            <a href="../picker/fakturTransaksi.html">Transaksi</a> / chat picker
-          </h1>
+          <h1 class="font-bold text-white">Chat</h1>
         </div>
-        <section
-          class="bg-[#2CB249] p-10 mt-6 rounded-md grid grid-cols-3 gap-6"
-        >
-          <!-- code here -->
+        <section class="bg-[#2CB249] p-10 mt-6 rounded-md">
+          <div class="flex flex-col gap-4">
+            <div class="h-[330px] overflow-y-auto" id="chat-box"></div>
+            <div class="flex gap-x-4">
+              <input
+                id="chat-input"
+                type="text"
+                class="flex-grow p-2 outline-none rounded-md"
+              />
+              <button id="send-chat-btn">
+                <img class="w-8 h-8" src="../assets/image/send.svg" alt="" />
+              </button>
+            </div>
+          </div>
         </section>
       </main>
     </div>
@@ -98,9 +111,8 @@
           <div>
             <p class="mb-7 text-xl font-bold">Layanan Kami</p>
             <ul>
-              <li>Bantuan</li>
-              <li>Notifikasi</li>
-              <li>Kontak kami</li>
+              <li><a href="./pusatBantuan.html">Bantuan</a></li>
+              <li><a href="./Notifikasi.html">Notifikasi</a></li>
             </ul>
           </div>
           <div>
@@ -112,7 +124,7 @@
             </ul>
           </div>
           <div>
-            <p class="mb-7 text-xl font-bold">Cari Materi</p>
+            <p class="mb-7 text-xl font-bold">Cari</p>
             <div class="flex p-4 gap-2 bg-white rounded-md">
               <img class="w-6" src="../assets/image/search.svg" alt="" />
               <input
@@ -124,11 +136,12 @@
           </div>
         </div>
         <div class="flex justify-center gap-10">
-          <p>Kebijakan privasi</p>
-          <p>Disclaimer</p>
+          <p><a href="./kebijakanPrivasi.html">Kebijakan privasi</a></p>
+          <p><a href="./tentangWebsite.html">Tentang Website</a></p>
         </div>
         <p class="text-center">© 2023 paytrash. All Rights Reserved</p>
       </section>
     </footer>
+    <script src="../script/thrower/chat.js"></script>
   </body>
 </html>
