@@ -48,46 +48,137 @@
     <div class="flex gap-x-9 max-w-[1200px] mx-auto px-8 mb-32">
       <aside class="basis-2/4 h-[638px]">
         <div
-          class="px-10 py-5 bg-[#2CB249] text-white rounded-2xl flex gap-x-7 mb-[52px]"
+          class="px-10 py-5 bg-[#2CB249] text-white rounded-2xl flex gap-x-7 mb-[52px] items-center"
         >
           <img
-            src="../assets/image/mark.webp"
+            src="../assets/image/chan.webp"
             alt=""
             class="rounded-full w-[150px] h-[150px] object-cover"
           />
           <div>
-            <p class="font-bold text-2xl mt-4 mb-3">Vika Dwi Nur Romadhoni</p>
-            <p>Jalan Gunung Munia No 07 Desa Jatirejo Jawa Tengah</p>
+            <p class="font-semibold text-base">Vika Dwi Nur Romadhoni</p>
+            <label for="foto" class="text-sm cursor-pointer"
+              >Ubah gambar
+              <input id="foto" type="file" accept="image/*" class="hidden" />
+            </label>
           </div>
         </div>
         <div class="ml-[80px]">
-          <ul class="flex flex-col gap-5 font-bold text-2xl">
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Cek status laporan</a></li>
-            <li><a href="#">Verifikasi</a></li>
-            <li><a href="#">Koinku</a></li>
-            <li><a href="#">Ganti kata sandi</a></li>
-            <li><a href="#">Keluar</a></li>
+          <ul class="flex flex-col gap-5 font-bold text-xl">
+            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="./tambahWarga.html">Tambah Warga</a></li>
+            <li><a href="./fakturTransaksi.html">Faktur Transaksi</a></li>
+            <li><a href="./riwayatTransaksi.html">Riwayat Transaksi</a></li>
+            <li><a href="./koinku.html">Koinku</a></li>
           </ul>
         </div>
       </aside>
       <main
-        class="basis-2/4 py-5 bg-[#2CB249] h-[638px] text-white rounded-2xl flex flex-col gap-y-7"
+        class="basis-2/4 py-5 border border-black rounded-2xl flex flex-col gap-y-7"
       >
-        <p class="px-10">Lihat / Edit profile</p>
+        <p class="px-10 text-xl font-semibold">Profile saya</p>
         <div class="bg-[#89F8AF] px-16">
-          <p class="text-center py-5 text-black">
-            Lengkapi Data Pribadi Kamu, Apabila ada kendala silahkan hubungi
-            pusat bantuan
+          <p class="py-5 text-black">
+            Kelola informasi profil Anda untuk mengontrol, melindungi dan
+            mengamankan akun
           </p>
         </div>
-        <div class="px-10">
-          <ul class="flex flex-col gap-y-7">
-            <li>Data pribadi</li>
-            <li>Kontak pribadi</li>
-            <li>Kontak Darurat</li>
-            <li>Akun Media sosial</li>
-          </ul>
+        <div class="px-10 flex flex-col gap-3 text-xs">
+          <div>
+            <label for="nama">Nama</label>
+            <input
+              class="border border-black px-5 py-1 rounded-md mt-1 outline-none w-full font-semibold"
+              type="text"
+              id="nama"
+              value="Vika Dwi Nur Romadhoni"
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              class="border border-black px-5 py-1 rounded-md mt-1 outline-none w-full font-semibold"
+              type="email"
+              id="email"
+              value="VIKARISKIANA123@gmail.com"
+            />
+          </div>
+          <div>
+            <label for="alamat">Alamat</label>
+            <input
+              class="border border-black px-5 py-1 rounded-md mt-1 outline-none w-full font-semibold"
+              type="text"
+              id="alamat"
+              value="Jl Sudirman nomor 23 jakarta pusat"
+            />
+          </div>
+          <div>
+            <label for="nomor">Nomor Telfon</label>
+            <input
+              class="border border-black px-5 py-1 rounded-md mt-1 outline-none w-full font-semibold"
+              type="number"
+              id="nomor"
+              value="082374938232"
+            />
+          </div>
+          <div>
+            <p class="mb-2">Jenis Kelamin</p>
+            <div class="flex gap-4">
+              <div class="flex gap-2 items-center">
+                <input type="radio" name="jenisKelamin" id="laki" />
+                <label for="laki" class="font-semibold">Laki-laki</label>
+              </div>
+              <div class="flex gap-2 items-center">
+                <input
+                  type="radio"
+                  checked
+                  name="jenisKelamin"
+                  id="perempuan"
+                />
+                <label for="perempuan" class="font-semibold">Perempuan</label>
+              </div>
+            </div>
+          </div>
+          <div>
+            <label for="tanggalLahir">Tanggal Lahir</label>
+            <input
+              class="border border-black px-5 py-1 rounded-md mt-1 outline-none w-full font-semibold"
+              type="date"
+              id="tanggalLahir"
+              value="1999-07-20"
+            />
+          </div>
+          <div>
+            <label for="bank">Bank</label>
+            <input
+              class="border border-black px-5 py-1 rounded-md mt-1 outline-none w-full font-semibold"
+              type="text"
+              id="bank"
+              value="BRI Syariah"
+            />
+          </div>
+          <div>
+            <label for="rekeningBank">Rekening Bank</label>
+            <input
+              class="border border-black px-5 py-1 rounded-md mt-1 outline-none w-full font-semibold"
+              type="text"
+              id="rekeningBank"
+              value="0234 xxxx xxxx xxxx "
+            />
+          </div>
+          <div>
+            <label for="atasNama">Atas Nama</label>
+            <input
+              class="border border-black px-5 py-1 rounded-md mt-1 outline-none w-full font-semibold"
+              type="text"
+              id="atasNama"
+              value="Vika Dwi Nur Romadhoni"
+            />
+          </div>
+          <button
+            class="mt-10 text-white bg-[#365FEF] rounded-md w-[72px] py-1 mb-8"
+          >
+            Edit
+          </button>
         </div>
       </main>
     </div>
@@ -96,7 +187,7 @@
         class="h-[484px] max-w-[1200px] mx-auto px-8 py-20 flex flex-col justify-between"
       >
         <div class="flex items-start justify-between">
-          <img src="./assets/image/footer-logo.png" alt="paytrash logo" />
+          <img src="../assets/image/footer-logo.png" alt="paytrash logo" />
           <div>
             <p class="mb-7 text-xl font-bold">Layanan Kami</p>
             <ul>
@@ -116,7 +207,7 @@
           <div>
             <p class="mb-7 text-xl font-bold">Cari Materi</p>
             <div class="flex p-4 gap-2 bg-white rounded-md">
-              <img class="w-6" src="./assets/image/search.svg" alt="" />
+              <img class="w-6" src="../assets/image/search.svg" alt="" />
               <input
                 class="bg-transparent text-slate-900 outline-none"
                 type="text"
